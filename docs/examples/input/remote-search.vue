@@ -39,6 +39,7 @@ const querySearchAsync = (queryString: string, cb: (arg: any) => void) => {
 
   clearTimeout(timeout)
   timeout = setTimeout(() => {
+    console.log(results)
     cb(results)
   }, 3000 * Math.random())
 }
